@@ -1,0 +1,6 @@
+httpd:
+    image: httpd:latest
+    volumes:
+      - ./dist:/usr/local/apache2/htdocs/
+    ports:
+      - "3005:80"

@@ -1,0 +1,37 @@
+<p>
+	Protocols is works!
+</p>
+
+<div>
+	<span>example for font awesome</span>
+	<i class="fa fa-american-sign-language-interpreting fa-5x" aria-hidden="true"> </i>
+</div>
+
+<div>
+	<!--translate with pipe-->
+	<p>
+		Translate With Pipe: <strong>{{ 'hello world' | translate }}</strong>
+	</p>
+
+	<!--translate with service-->
+	<p>
+		Translate with Service: <strong>{{ translatedText }}</strong>
+	</p>
+	<p>
+		Translate <strong class="text-muted">Hello, %0 %1!</strong>:
+		<br>
+		<strong>{{ 'hello greet' | translate:['Jane', 'Doe'] }}</strong>
+	</p>
+
+	<!--single value-->
+	<p>
+		Translate <strong class="text-muted">Well done %0</strong>:
+		<br>
+		<strong>{{ 'well done' | translate:'John' }}</strong>
+	</p>
+	<p>
+		Translate <strong class="text-muted">Good bye (fallback)</strong>:
+		<br>
+		<strong>{{ 'good bye' | translate }}</strong>
+	</p>
+</div>
